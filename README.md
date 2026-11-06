@@ -219,7 +219,7 @@ scripts/install.mjs          profile 安装脚本
 scripts/uninstall.mjs        profile 卸载脚本
 scripts/replay-session.mjs   真实日志回放工具
 scripts/backfill-workspace.mjs 历史会话批量补档
-test/*.test.mjs              17 个断言组
+test/*.test.mjs              18 个断言组
 ```
 
 ## License
