@@ -1,0 +1,8 @@
+node_modules/
+.dsh-better-output/
+_tmp/
+replay-output/
+coverage/
+*.log
+.DS_Store
+Thumbs.db

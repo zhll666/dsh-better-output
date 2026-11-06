@@ -1,0 +1,56 @@
+{
+  "name": "dsh-better-output",
+  "version": "0.1.0",
+  "description": "DSH 插件：每个会话一个目录，自动用 txt 记录输入/输出、工具指令、调用的文件、浏览的网页，并把项目放进会话的 projects/。",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "src/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "scripts/install.mjs",
+    "scripts/uninstall.mjs",
+    "scripts/backfill-workspace.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node test/format.test.mjs && node test/archive.test.mjs && node test/plugin.test.mjs",
+    "replay": "node scripts/replay-session.mjs",
+    "install:profile": "node scripts/install.mjs",
+    "uninstall:profile": "node scripts/uninstall.mjs"
+  },
+  "author": "Chen-Zhenghao (https://github.com/zhll666)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhll666/dsh-better-output.git"
+  },
+  "homepage": "https://github.com/zhll666/dsh-better-output#readme",
+  "bugs": {
+    "url": "https://github.com/zhll666/dsh-better-output/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "session",
+    "archive",
+    "transcript",
+    "logging"
+  ]
+}
